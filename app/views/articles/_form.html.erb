@@ -1,0 +1,5 @@
+<%= bootstrap_form_for(@article, label_errors: true) do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_area :body %>
+  <%= f.submit "Add New Article", class: "btn btn-success" %>
+<% end %>
