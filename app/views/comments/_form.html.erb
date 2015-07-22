@@ -1,0 +1,8 @@
+<div class="well">
+  <h3>Post a Comment</h3>
+  <%= bootstrap_form_for [ @article, @comment] do |f| %>
+  <%= f.text_field :author_name, label: "Your Name" %>
+  <%= f.text_area :body, label: "Your Comment" %>
+  <%= f.submit "Submit Comment", class: "btn btn-primary" %>
+  <% end %>
+</div>
